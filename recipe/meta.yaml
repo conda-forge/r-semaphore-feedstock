@@ -1,4 +1,4 @@
-{% set version = '1.0.2' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/semaphore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/semaphore/semaphore_{{ version }}.tar.gz
-  sha256: 017443979225724eeb7060bf8c6effa0b89abef2040acfdff83bf1fd0f0675e6
+  sha256: f9e1b83d72725757244e2d46081439a3a028113ed6594e1b94804965182d2b76
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,10 +51,7 @@ test:
 about:
   home: https://cmmr.github.io/semaphore/, https://github.com/cmmr/semaphore
   license: MIT
-  summary: Implements named semaphores from the 'boost' 'C++' library <https://www.boost.org/>.
-    A semaphore object is shared amongst several processes. This integer value can be
-    safely incremented or decremented by each processes. Processes can also wait (blocking)
-    for the value to become non-zero.
+  summary: Implements named semaphores from the 'boost' 'C++' library <https://www.boost.org/>. A semaphore object is shared amongst several processes. This integer value can be safely incremented or decremented by each processes. Processes can also wait (blocking) for the value to become non-zero.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
