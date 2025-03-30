@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/semaphore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/semaphore/semaphore_{{ version }}.tar.gz
-  sha256: f9e1b83d72725757244e2d46081439a3a028113ed6594e1b94804965182d2b76
+  sha256: 0c3398cdf17d3fca939ebf6b29be80488f884f1b15422a840b0c3bc486c5901c
 
 build:
   number: 0
